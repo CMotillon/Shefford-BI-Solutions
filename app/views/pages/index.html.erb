@@ -1,15 +1,22 @@
-<div id="index" class="container imgbox">
-    <img src="/assets/BG.jpg" class="center-fit">
-    <div class="sidenav uppercase">
-        <%= image_tag('papa-logo-3.svg') %>
-        <a id="propos_clicked">A Propos</a>
-        <a id="services_clicked">Nos Services</a>
-        <a id="blog_clicked">Blog</a>
-        <a id="contact_clicked">Contactez-nous</a>
+<div id="index" class="container">
+    <img class="BG-img" src="/assets/BG.jpg">
+    <div class="sidenav">
+        <img src="/assets/papa-logo-3.svg" class="logo-img">
+        <div class="sidenav-container uppercase">
+            <a id="propos_clicked">À Propos</a></br>
+            <a id="services_clicked">Services</a></br>
+            <a id="realisations_clicked">Réalistations</a>
+        </div>
+        <a id="blog_clicked" class="blog-container uppercase">Blog</a>
+        <a id="contact_clicked" class="contact-container uppercase">Nous Contacter</a>
+    </div>
+
+    <div id="slogan" class="slogan uppercase">
+        <h1>Les solutions sont à votre portée</h1>
     </div>
 
     <div id="propos" class="center">
-        <h2><u>A Propos :</u></h2>
+        <h2><u>À Propos:</u></h2>
         <p>
             Shefford BI Solutions a été créée afin d’apporter aux organisations de petites et moyennes taille des
             solutions dans le domaine de l’intelligence d’affaire.
@@ -19,7 +26,7 @@
             dans des environnements de systèmes d'information complexes.
             Son fondateur Philippe Motillon après avoir géré des équipe de développement durant plus de 15 ans ,
             s’est spécialisé dans l’intelligence d’affaire au début des années 2000 mettant en place des pratiques
-            d’analyse et de visualisation de données dans des entreprises de service et leurs clients.
+            d’analyse et de visualisation de données dans des entreprises de services et leurs clients.
         </p>
 
         <b>Spécialités:</b>
@@ -31,6 +38,10 @@
             <li>Projets BI</li>
             <li>Aide au choix d’outils</li>
         </ul>
+    </div>
+
+    <div id="realisations" class="center">
+        <h2><u>Réalisations</u></h2>
     </div>
 
     <div id="services" class="center">
