@@ -1,19 +1,10 @@
 body {
     font-family: "Montserrat";
-    overflow: hidden;
     padding: 0;
     margin: 0;
 
     background-image: url(/assets/BG.jpg);
     background-size: cover;
-}
-
-.circle-img {
-    width: 85%;
-    position: absolute;
-    top: 2%;
-    right: 15%;
-    opacity: 85%;
 }
 
 .logo-img {
@@ -52,7 +43,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 12%;
+    width: 13%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -80,21 +71,18 @@ body {
 .propos{
     position: absolute;
     width: 30%;
-    top: 20%;
-    left: 30%;
-    font-size: medium;
-    transform: translate(-10%, 55%);
+    top: 10vh;
+    left: 15%;
+    font-size: 2vh;
     animation: mainFadeIn 1.5s forwards;
     line-height: 1.5;
 }
 
 .services {
     position: absolute;
-    width: 30%;
-    top: 20%;
-    left: 30%;
-    font-size: medium;
-    transform: translate(-10%, 37%);
+    width: 40%;
+    left: 15%;
+    font-size: 1.7vh;
     animation: mainFadeIn 1.5s forwards;
     line-height: 1.5;
 }
@@ -102,10 +90,10 @@ body {
 .slogan {
     position: absolute;
     text-align: right;
-    top: 50%;
-    left: 70%;
-    transform: translate(-10%, 50%);
-    font-size: xx-large;
+    top: 15vh;
+    right: 5vh;
+    left: 60%;
+    font-size: 1.5vw;
     animation: mainFadeIn 1.5s forwards;
 }
 
@@ -113,6 +101,42 @@ ul.no-bullets {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.contact_form {
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    width: 70%;
+    animation: mainFadeIn 1.5s forwards;
+}
+
+.contact_information {
+    position: absolute;
+    left: 80%;
+    text-align: left;
+    width: 20%;
+    animation: mainFadeIn 1.5s forwards;
+}
+
+.header {
+    text-align: center;
+    animation: mainFadeIn 1.5s forwards;
+}
+
+.form_field {
+    background-color: transparent;
+    color:white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: medium;
+    text-align: center;
+}
+
+.description_field {
+    font-family: "Montserrat";
+    font-size: 14px;
 }
 
 @keyframes mainFadeIn {
@@ -124,30 +148,20 @@ ul.no-bullets {
     }
 }
 
-.line {
-    height: 2px;
-    background: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation: dude .75s 1 forwards;
-    animation: dude .75s 1 forwards;
+.button {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	padding: 20px;
+	border: 2px solid white;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
 }
 
-@-webkit-keyframes dude {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 60%;
-    }
-}
-
-@keyframes dude {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 60%;
-    }
+.button:hover {
+	color: white;
+	background: blue;
+	border-color: blue;
+	transition: all 0.4s ease 0s;
 }
