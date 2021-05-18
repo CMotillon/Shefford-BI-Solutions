@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
 
     def contact_save
         @contact = Contact.new(contact_info)
+        UserMailer.contact_form(@contact).deliver
         @contact.save!
 
         if @contact.save

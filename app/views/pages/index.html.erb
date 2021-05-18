@@ -102,32 +102,37 @@
 
             <%= form_for Contact.new, url: pages_contact_path(Contact.new) do |f| %>
                 <div id="name">
+                    <p></br><p>
                     <h3>Full Name</h3>
                     <%= f.text_field :name, class: "form_field" %>
                 </div>
 
                 <div id="email">
+                    <p></br><p>
                     <h3>Email</h3>
                     <%= f.text_field :email, class: "form_field" %>
                 </div>
 
                 <div id="phone">
+                    <p></br><p>
                     <h3>Phone</h3>
                     <%= f.text_field :phone, class: "form_field" %>
                 </div>
 
                 <div id="title">
+                    <p></br><p>
                     <h3>Title</h3>
                     <%= f.text_field :title, class: "form_field" %>
                 </div>
 
                 <div id="description">
+                    <p></br><p>
                     <h3>Description</h3>
                     <%= f.text_area :description, {:size => "50x10", class: "description_field"} %>
-                    <p></br><p>
                 </div>
 
                 <div>
+                    <p></br><p>
                     <%= f.submit "Submit", {id: "submit_button", class: "button"} %>
                 </div>
             <% end %>

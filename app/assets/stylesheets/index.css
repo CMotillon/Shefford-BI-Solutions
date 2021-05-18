@@ -73,7 +73,7 @@ body {
     width: 30%;
     top: 10vh;
     left: 15%;
-    font-size: 2vh;
+    font-size: 1.7vh;
     animation: mainFadeIn 1.5s forwards;
     line-height: 1.5;
 }
@@ -106,13 +106,14 @@ ul.no-bullets {
 .contact_form {
     position: absolute;
     text-align: center;
-    top: 10vh;
+    top: 4vh;
     width: 70%;
     animation: mainFadeIn 1.5s forwards;
 }
 
 .contact_information {
     position: absolute;
+    top: 4vh;
     left: 80%;
     text-align: left;
     width: 20%;
@@ -149,6 +150,7 @@ ul.no-bullets {
 }
 
 .button {
+    font-family: "Montserrat";
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
