@@ -1,12 +1,11 @@
 class UserMailer < ApplicationMailer
-    default to: 'cedricmotillon@outlook.com', from: 'no_reply@sheffordbisol.ca'
+    default from: 'no_reply@sheffordbisol.ca'
 
     def contact_form(contact)
         @contact = contact
-        puts 'Is this working?'
-        puts 'Is this working?'
-        puts 'Is this working?'
-        puts 'Is this working?'
-        mail(subject: 'Blablabla')
+        email_subject = 'Demande de contact par ' + contact.name
+        email_body = contact.description + "\nEmail: " + contact.email + "\nTelephone: " + contact.phone
+        
+        mail(to: 'cedricmotillon@outlook.com', subject: email_subject, body: email_body)
     end
 end

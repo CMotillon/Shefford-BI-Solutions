@@ -51,12 +51,12 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     address: "smtpout.secureserver.net",
-    port: 465,
-    domain: Rails.application.secrets.domain_name,
+    port: 587,
+    domain: 'sheffordbisol.ca',
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_password
+    user_name: 'philippe.motillon@sheffordbisol.ca',
+    password: 'Shefford2021!'
   }
 
   # ActionMailer Config
