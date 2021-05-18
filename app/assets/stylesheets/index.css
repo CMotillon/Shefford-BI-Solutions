@@ -68,23 +68,51 @@ body {
     cursor: pointer;
 }
 
+.service-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .propos{
     position: absolute;
     width: 30%;
     top: 10vh;
     left: 15%;
-    font-size: 1.7vh;
+    font-size: 2vh;
     animation: mainFadeIn 1.5s forwards;
     line-height: 1.5;
 }
 
 .services {
     position: absolute;
-    width: 40%;
+    width: 50%;
     left: 15%;
-    font-size: 1.7vh;
+    font-size: 2vh;
     animation: mainFadeIn 1.5s forwards;
     line-height: 1.5;
+}
+
+.services_container {
+    position: absolute;
+    width: 70%;
+    top: 4vh;
+    text-align: left;
+    animation: mainFadeIn 1.5s forwards;
+}
+
+.detail_container {
+    position: absolute;
+    left: 85%;
+    text-align: left;
+    width: 50%;
+}
+
+.detail_text {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+    animation: mainFadeIn 1.5s forwards;
 }
 
 .slogan {
@@ -112,6 +140,11 @@ ul.no-bullets {
 }
 
 .contact_information {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+
     position: absolute;
     top: 4vh;
     left: 80%;
