@@ -1,5 +1,3 @@
-nes (72 sloc)  3.98 KB
-  
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
