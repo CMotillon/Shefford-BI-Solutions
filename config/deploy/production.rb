@@ -15,7 +15,6 @@ set :rails_env, "development"
 set :bundle_without, "production"
 set :deploy_to, "/home/bitnami/apps/#{app}"
 set :linked_dirs, %w{tmp/pids tmp/sockets log}
-set :linked_files, %w{config/database.yml}
 
 # role-based syntax
 # ==================
