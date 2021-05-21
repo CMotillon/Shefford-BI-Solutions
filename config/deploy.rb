@@ -1,7 +1,7 @@
   
 # config valid for current version and patch releases of Capistrano
 
-before 'deploy', 'rvm1:install:ruby'
+# before 'deploy', 'rvm:install:ruby'
 set :rvm_map_bins, [ 'rake', 'gem', 'bundle', 'ruby', 'puma', 'pumactl' ]
 set :application, "sheffordbisol"
 set :repo_url, "https://github.com/CMotillon/Shefford-BI-Solutions.git"
