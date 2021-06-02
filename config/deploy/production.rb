@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "15.222.3.52", user: "bitnami", roles: %w{app db web}
+server "99.79.60.24", user: "bitnami", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 app = ENV['APP']
@@ -24,9 +24,9 @@ set :linked_dirs, %w{tmp/pids tmp/sockets log}
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-role :app, %w{bitnami@15.222.3.52}
-role :web, %w{bitnami@15.222.3.52}
-role :db,  %w{bitnami@15.222.3.52}
+role :app, %w{bitnami@99.79.60.24}
+role :web, %w{bitnami@99.79.60.24}
+role :db,  %w{bitnami@99.79.60.24}
 
 
 
